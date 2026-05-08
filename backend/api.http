@@ -2,10 +2,10 @@ POST http://localhost:9090/register HTTP/1.1
 Content-Type: application/json
 
 {
-    "username"
-    "password"
-    "email" 
-    "name" 
+       "username": "aneesh",
+    "password": "12345",
+    "email": "aneesh@gmail.com",
+    "name": "Aneesh"
 }
 
 ###
@@ -14,6 +14,12 @@ POST http://localhost:9090/login HTTP/1.1
 Content-Type: application/json
 
 {
-    "email":
-    "password" : "a"
+    "email":"aneesh@gmail.com",
+    "password" : "12345"
+}
+
+GET http://localhost:9090/get_user_and_profile
+Content-Type: application/json
+{
+    "token": "3f54ce63a0feebcf436ab8876f407442792a551e4c87534d54be71af074270dc"
 }
